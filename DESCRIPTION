@@ -1,7 +1,7 @@
 Package: simpr
 Type: Package
 Title: Flexible 'Tidyverse'-Friendly Simulations
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: c(
    person("Ethan", "Brown", email = "ecbrown@umn.edu", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3419-7465")),
    person("Jeffrey", "Bye", email = "jbye@umn.edu", role = c("ctb")))
@@ -17,14 +17,14 @@ URL: https://statisfactions.github.io/simpr/,
 BugReports: https://github.com/statisfactions/simpr/issues/
 Depends: R (>= 4.0.0)
 Imports: broom, dplyr, furrr, generics, purrr, magrittr, rlang, tibble,
-        tidyr, tidyselect
+        tidyr (>= 1.2.0), tidyselect
 RoxygenNote: 7.1.2
 Suggests: MASS, testthat, ggplot2, knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-01-11 18:18:45 UTC; brow3821
+Packaged: 2022-02-12 22:14:20 UTC; brow3821
 Author: Ethan Brown [aut, cre] (<https://orcid.org/0000-0003-3419-7465>),
   Jeffrey Bye [ctb]
 Maintainer: Ethan Brown <ecbrown@umn.edu>
 Repository: CRAN
-Date/Publication: 2022-01-12 10:50:02 UTC
+Date/Publication: 2022-02-13 00:40:02 UTC
