@@ -108,7 +108,7 @@ to do with how you specified the simulation in
 meta_list_out = specify(a = ~ MASS::mvrnorm(n, rep(0, 2), Sigma = S)) \%>\%
   define(n = c(10, 20, 30),
        S = list(independent = diag(2), correlated = diag(2) + 2)) \%>\%
-  generate(3)
+  generate(1)
 
  ## View overall structure of the result and a single simulation output
  meta_list_out
@@ -118,7 +118,7 @@ meta_list_out = specify(a = ~ MASS::mvrnorm(n, rep(0, 2), Sigma = S)) \%>\%
  meta_list_2 = specify(a = ~ MASS::mvrnorm(n, rep(0, 2), Sigma = S)) \%>\%
   define(n = c(10, 20, 30),
        S = list(independent = diag(2), correlated = diag(2) + 2)) \%>\%
-  generate(4)
+  generate(2)
 
  meta_list_2
 
@@ -130,9 +130,10 @@ meta_list_out = specify(a = ~ MASS::mvrnorm(n, rep(0, 2), Sigma = S)) \%>\%
        S = list(independent = diag(2), correlated = diag(2) + 2)) \%>\%
   fit(lm = ~ lm(a_2 ~ a_1, data = .)) \%>\%
   tidy_fits \%>\%
-  generate(4)
+  generate(1)
 
   meta_list_generate_after
+
 }
 \seealso{
 \code{\link[=specify.formula]{specify}} and
